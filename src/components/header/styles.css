@@ -179,6 +179,17 @@
   body {
     overflow: hidden;
   }
+  .header-body{
+    width: 0;
+    height: 0;
+  }
+  .players {
+    position: absolute;
+    top: 1%;
+    left: 5%;
+    z-index: 2;
+    width: 20px;
+  }
   .top-header {
     display: none;
   }

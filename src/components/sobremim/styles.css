@@ -166,6 +166,23 @@
   body {
     overflow: hidden;
   }
+  .body-sobreMim{
+    top:-9em;
+    width: 100%;
+    position: absolute;
+  }
+  .descricao-div{
+    padding-left: 0;
+  }
+  .sobremimcard1,.sobremimcard2,.sobreMimTexto{
+    transform: scale(0.5);
+  }
+  .sobremimcard1{
+    left:0;
+  }
+  .sobreMimTexto{
+    padding-bottom: 1em ;
+  }
   .sobreMim {
     position: absolute;
     /* display: flex; */

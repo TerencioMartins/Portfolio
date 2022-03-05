@@ -86,13 +86,14 @@
   }
   #textZone-projetos {
     position: absolute;
+    top: -38em;
     /* display: flex; */
     /* flex-direction: column;
     align-items: center;
     justify-content: center; */
     width: 100%;
     right: -0.5em;
-    top: 5em;
+    /* top: 5em; */
   }
   .container {
     position: absolute;
@@ -101,7 +102,7 @@
     flex-wrap: nowrap;
     padding: 0;
     margin: 0;
-    top: 20em;
+    top: -23em;
     max-width: 100%;
     right: 0em;
     left: 0em;

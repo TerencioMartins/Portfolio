@@ -127,6 +127,11 @@
   body {
     overflow: hidden;
   }
+  .skills{
+    position: absolute;
+    top:-45em;
+    width: 100%;
+  }
   #textZone-skills {
     position: absolute;
     width: 100%;
