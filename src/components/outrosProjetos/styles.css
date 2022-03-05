@@ -1,0 +1,123 @@
+.body-outrosProjetos {
+  transition: 1s opacity;
+  opacity: 0;
+}
+.fade-in {
+  opacity: 2;
+}
+.descricao-projetos:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  cursor: default;
+}
+.descricao-projetos {
+  display: inline-block;
+  letter-spacing: 4px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(195, 195, 195);
+  font-size: 1.2em;
+}
+.container {
+  margin: 0;
+  /* padding-left: 10em; */
+  float: right;
+  padding-right: 15em;
+  padding-top: 15em;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 508px;
+
+}
+
+#textZone-projetos {
+  display: inline-block;
+  padding-left: 15em;
+  padding-top: 25em;
+}
+#letras-projetos {
+  color: white;
+}
+#letras-projetos:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  cursor: default;
+}
+.card {
+  width: 254px;
+  height: 254px;
+  transition: all 0.3s;
+  filter: grayscale(1);
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 30px 1px rgba(238, 238, 238, 0.7);
+  filter: grayscale(0);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #textZone-projetos {
+    padding-left: 15em;
+    padding-top: 3em;
+  }
+  .container {
+    padding-left: 10em;
+    padding-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 508px;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  body {
+    overflow: hidden;
+  }
+  #textZone-projetos {
+    position: absolute;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    right: -0.5em;
+    top: 5em;
+  }
+  .container {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0;
+    margin: 0;
+    top: 20em;
+    max-width: 100%;
+    right: 0em;
+    left: 0em;
+    transform: scale(0.9);
+    -webkit-overflow-scrolling: touch;
+    overflow: auto;
+    white-space: nowrap;
+    box-shadow: 0px 0px 30px 1px rgba(238, 238, 238, 0.7);
+  }
+  .card {
+    display: flex;
+    width: 100%;
+    max-width: 254px;
+  }
+  .card:hover {
+    transform: scale(1);
+    box-shadow: none;
+  }
+}

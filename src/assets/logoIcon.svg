@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="600" height="720" viewBox="0 0 600 720">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 600px;
+        filter: url(#filter);
+        fill: #fdfdfd;
+        font-family: "Segoe Script";
+      }
+    </style>
+    <filter id="filter" x="57" y="144" width="472" height="439" filterUnits="userSpaceOnUse">
+      <feOffset result="offset" dx="-13.994" dy="7.757" in="SourceAlpha"/>
+      <feGaussianBlur result="blur"/>
+      <feFlood result="flood" flood-color="#00eaff"/>
+      <feComposite result="composite" operator="in" in2="blur"/>
+      <feBlend result="blend" in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <text id="T" class="cls-1" x="64" y="565.5">T</text>
+</svg>

@@ -1,0 +1,247 @@
+.players {
+  display: flex;
+  float: right;
+  padding-right: 5em;
+  padding-top: 2em;
+  z-index: 2;
+}
+.play:hover{
+  color: aqua;
+  cursor: pointer;
+}
+.play{
+  color: white;
+}
+
+
+.vertical-menu {
+  position: fixed;
+  width: 10rem;
+  height: 100vh;
+  display: inline-block;
+  /* flex-direction: column;
+  justify-content: center; */
+  background-color: #181818;
+  padding: 0%;
+  margin: 0%;
+  font-family: "Lato", sans-serif;
+  top: 0;
+}
+#contact {
+  border-bottom: 0px;
+}
+.vertical-menu a:not(.curriculo),
+.vertical-menu span {
+  color: rgb(221, 221, 221);
+  align-items: center;
+  padding: 12px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+.vertical-nav a:not(.curriculo),
+.vertical-nav-mobile-on a,
+.vertical-nav-mobile-off a {
+  border-bottom: 1px solid rgb(64, 64, 71);
+}
+.vertical-menu span {
+  border-bottom: 0px;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px;
+}
+.vertical-nav{
+  height: 80%;
+  justify-content: space-around;
+}
+/* NAV PC */
+.vertical-nav,
+.vertical-nav-mobile-on,
+.vertical-nav-mobile-off {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.vertical-nav{
+  height: 80%;
+  justify-content: space-around;
+}
+/* NAV PC */
+.vertical-nav a:hover:not(.curriculo),
+.vertical-nav-mobile-on a:hover,
+.vertical-nav-mobile-off a:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+}
+.logoIcon {
+  width: 5rem;
+  height: 5rem;
+  /* margin-bottom: 10px; */
+  margin-top: 10%;
+  margin-left: 2.5rem;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(5, 5, 5);
+  height: 28vh;
+}
+.top-header p {
+  color: rgb(221, 221, 221);
+  font-size: 1.8rem;
+  margin: 0;
+  text-align: center;
+}
+
+.top-header p:hover,
+.top-header span:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+}
+#martins {
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+#desenvolvedor-web {
+  margin-bottom: 10px;
+}
+.top-header span {
+  justify-content: baseline;
+}
+.curriculo {
+  padding: 0.8em 1.8em;
+  border: 2px solid #f3f3f3;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  font-size: 16px;
+  transition: 0.3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #f5f5f5;
+  text-decoration: none;
+}
+.secoes {
+  display: flex;
+  flex-direction: column;
+}
+.curriculo::before {
+  content: "";
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #f6f6f6;
+  transition: 0.5s ease;
+  display: block;
+  z-index: -1;
+}
+
+.curriculo:hover::before {
+  width: 105%;
+}
+
+.curriculo:hover {
+  color: #111;
+}
+
+#first-nav {
+  border-top: 1px solid rgb(64, 64, 71);
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  /* margin-top: 20vh; */
+  padding: 0;
+}
+.footer span:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  cursor: pointer;
+}
+.mobile-menu {
+  visibility: hidden;
+}
+@media only screen and (max-width: 912px) {
+  body {
+    overflow: hidden;
+  }
+  .top-header {
+    display: none;
+  }
+  .vertical-menu {
+    background-color: #1d1d1d;
+    position: unset;
+  }
+  .vertical-nav {
+    position: absolute;
+    /* top: 8vh; */
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    transform: translateX(100%);
+  }
+  .vertical-nav-mobile-off {
+    position: absolute;
+    /* top: 8vh; */
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    transform: translateX(100%);
+    animation: slideRight 0.5s forwards;
+    right: 100%;
+    z-index: 2;
+  }
+
+  @keyframes slideRight {
+    100% {
+      right: 0px;
+    }
+  }
+  .vertical-nav-mobile-on {
+    position: absolute;
+    /* top: 8vh; */
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #181818;
+    animation: slide 0.5s forwards;
+    left: 100%;
+    z-index: 2;
+  }
+  @keyframes slide {
+    100% {
+      left: 0px;
+    }
+  }
+  .mobile-menu {
+    visibility: visible;
+    display: block;
+    color: white;
+    position: absolute;
+    right: 1em;
+    top: 1em;
+    z-index: 3;
+  }
+  .players {
+    display: flex;
+    float: left;
+    padding-left: 1em;
+    padding-top: 0em;
+    z-index: 5;
+  }
+
+}

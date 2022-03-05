@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu:wght@500&display=swap");
+/* .sobreMim{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.body-sobreMim {
+  transition: 1s opacity;
+  opacity: 0;
+}
+.fade-in {
+  opacity: 2;
+}
+.titulo {
+  padding-top: 20rem;
+  padding-left: 15rem;
+  color: rgb(240, 240, 240);
+  display: inline-block;
+}
+.letras {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4.8em;
+  display: inline-block;
+  transition: color 0.4s;
+}
+.letras:hover,
+.descricao:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  cursor: default;
+}
+.letras:hover{
+  transform: scale(1.05);
+}
+.espaco {
+  visibility: hidden;
+  font-size: 2.5em;
+}
+.descricao {
+  display: inline-block;
+  letter-spacing: 4px;
+  font-family: "Ubuntu", sans-serif;
+  padding-left: 15.5rem;
+  color: rgb(195, 195, 195);
+  font-size: 1.2em;
+}
+.descricao-div {
+  display: block;
+}
+
+.song-button {
+  padding-left: 15em;
+}
+
+@media only screen and (max-width: 912px) {
+  body {
+    overflow: hidden;
+  }
+  .sobreMim {
+    position: absolute;
+    /* display: flex; */
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    width: 100%;
+    top: 15em;
+  }
+  .titulo {
+    display: inline-block;
+    padding: 0;
+    padding-left: 0.5em;
+    width: 100%;
+  }
+  .Typewriter {
+    display: block;
+    padding-left: 0.5em;
+    font-size: 1em;
+  }
+  .letras {
+    font-size: 2em;
+  }
+  .espaco {
+    font-size: 0.8em;
+  }
+  .sobreMim-mobile-off {
+    display: block;
+    position: absolute;
+    left: 1em;
+    top: 15em;
+    width: 90%;
+    height: 60%;
+    animation: slideRight2 0.5s forwards;
+    right: 100%;
+  }
+
+  @keyframes slideRight2 {
+    0% {
+      left: -100%;
+    }
+    100% {
+      right: 0;
+    }
+  }
+  .sobreMim-mobile-on {
+    display: block;
+    position: absolute;
+    top: 15em;
+    width: 90%;
+    height: 60%;
+    transform: translateX(-100%);
+    animation: slide 0.5s forwards;
+    left: 100%;
+  }
+  @keyframes slide {
+    100% {
+      left: 0;
+    }
+  }
+}

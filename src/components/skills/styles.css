@@ -1,0 +1,157 @@
+.skills {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.body-skills {
+  transition: 1s opacity;
+  opacity: 0;
+}
+.fade-in {
+  opacity: 1;
+}
+
+#textZone-skills {
+  padding-left: 15em;
+  padding-top: 25em;
+  display: inline-block;
+}
+
+.descricao-skills:hover,
+.barras span:hover {
+  color: aqua;
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  cursor: default;
+}
+.descricao-skills {
+  display: inline-block;
+  letter-spacing: 4px;
+  font-family: "Ubuntu", sans-serif;
+  color: rgb(195, 195, 195);
+  font-size: 1.2em;
+}
+.barras-skills {
+  display: inline-block;
+  padding-right: 20em;
+  padding-top: 20em;
+}
+.barras-background,
+.barras-status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 18em;
+  z-index: 1;
+}
+.barras-status {
+  position: relative;
+  bottom: 18em;
+  z-index: 2;
+}
+.barras {
+  background-color: #000000;
+  height: 1.3em;
+  width: 20em;
+}
+.barras span {
+  color: white;
+  display: inline-block;
+  transform: translateX(-130%);
+  text-align: end;
+  width: 8em;
+}
+#frontEnd {
+  background-color: white;
+  width: 18.5em;
+}
+#javascript {
+  background-color: white;
+  width: 18em;
+}
+#react {
+  background-color: white;
+  width: 17em;
+}
+#axios {
+  background-color: white;
+  width: 15em;
+}
+#git {
+  background-color: white;
+  width: 17em;
+}
+#bootstrap {
+  background-color: white;
+  width: 18.5em;
+}
+#proAtividade {
+  background-color: white;
+  width: 20em;
+}
+#multitarefas {
+  background-color: white;
+  width: 19.5em;
+}
+#empatia {
+  background-color: white;
+  width: 20em;
+}
+#colaboracao {
+  background-color: white;
+  width: 20em;
+}
+
+.barras:hover {
+  /* transform: scale(1.01); */
+  box-shadow: 0px 0px 30px 1px rgb(243, 243, 243, 0.7);
+}
+
+@media screen and (max-width: 1500px) {
+  .barras-skills {
+    padding-right: 10em;
+  }
+}
+@media screen and (max-width: 1360px) {
+  .barras-skills {
+    padding-right: 5em;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .barras-skills {
+    padding-right: 0em;
+  }
+}
+
+@media only screen and (max-width: 912px) {
+  body {
+    overflow: hidden;
+  }
+  #textZone-skills {
+    position: absolute;
+    width: 100%;
+    right: -0.5em;
+    top: 10em;
+    padding: 0;
+  }
+  .barras-skills {
+    position: absolute;
+    top: 4em;
+    display: inline-block;
+    width: 100%;
+    right: 0em;
+    left: 4.3em;
+    transform: scale(0.75);
+  }
+  .descricao {
+    display: block;
+    padding-left: 0.5em;
+    font-size: 1em;
+  }
+  .letras {
+    font-size: 2em;
+  }
+  .espaco {
+    font-size: 0.8em;
+  }
+}
