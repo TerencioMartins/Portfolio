@@ -45,7 +45,7 @@ export default function ParticleBackground() {
               size: 40,
             },
             push: {
-              quantity: 100,
+              quantity: 1,
               delay: 0,
             },
             repulse: {
