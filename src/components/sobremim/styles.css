@@ -153,6 +153,7 @@
   width: 20em;
   height: 20em;
   text-justify:distribute;
+  font-family: "Ubuntu", sans-serif;
 }
 .sobreMimTexto:hover{
   color: rgb(10, 10, 10);
