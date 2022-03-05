@@ -1,6 +1,6 @@
-import React, { useEffect } from "react";
-import Particles from "react-tsparticles";
-import { useState } from "react";
+import React from "react";
+import Particles from "react-tsparticles"
+
 
 export default function ParticleBackground() {
 
