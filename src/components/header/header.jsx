@@ -31,6 +31,7 @@ export default function Header() {
 
   return (
     <>
+    <div className="headerBody">
       <menu className="vertical-menu">
         <div className="top-header">
           <img className="logoIcon" src={logoIcon} alt="logoicon" />
@@ -101,6 +102,7 @@ export default function Header() {
           <BsMusicNoteBeamed size={40} className="play" />
         </p>
       </div>
+    </div>
     </>
   );
 }

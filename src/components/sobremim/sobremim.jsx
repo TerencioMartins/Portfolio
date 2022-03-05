@@ -7,11 +7,20 @@ import Typewriter from "typewriter-effect";
 export default function SobreMim({ url }) {
   const { style, setStyle, styleSobreMim, setStyleSobreMim, changeStyle } =
     useContext(Context);
+  const [faderight, setFaderight] = useState("");
 
   useEffect(() => {
     let el = document.querySelector(".body-sobreMim");
     el.classList.add("fade-in");
   });
+
+  function sobreMimTexto() {
+    if (faderight === "" || faderight === "fadeoutright") {
+      setFaderight("faderight");
+    } else if (faderight === "faderight") {
+      setFaderight("fadeoutright");
+    }
+  }
 
   return (
     <div className="body-sobreMim">
@@ -64,24 +73,27 @@ export default function SobreMim({ url }) {
         </section>
         <section className="descricao-div">
           <div className="descricao">
-            <Typewriter
-              onInit={(typewriter) => {
-                typewriter
-                  .typeString("Desenvolvedor ")
-                  .pauseFor(10)
-                  .typeString("front-end ")
-                  .pauseFor(50)
-                  .typeString("/")
-                  .pauseFor(50)
-                  .typeString(" React.js")
-                  .start();
-              }}
-              options={{
-                delay: 30,
-              }}
-            />
+            <p className="desenvolvedor">Desenvolvedor front-end / React.js</p>
+            <p onClick={sobreMimTexto} className="sabermais">
+              Saber mais ➡
+            </p>  
           </div>
         </section>
+        <div className={`sobremimcard1 ${faderight}`}>
+        <div className={`sobremimcard2 ${faderight}`}>
+          <p className={`sobreMimTexto ${faderight}`}>
+            <i>&emsp;&emsp;&emsp;&emsp;&emsp;Apaixonado por:</i> <br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🎮 𝙂𝙖𝙢𝙚𝙨 <br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🎌 𝘼𝙣𝙞𝙢𝙚𝙨 <br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;💻 𝘾𝙤𝙙𝙞𝙣𝙜 <br />
+            <br/>
+            Escolhi desenvolvimento pois além de incrível, é muito animador
+            pensar na possibilidade de impactar inúmeras vidas com o que faço.
+            Atualmente crio meus próprios projetos utilizando várias ferramentas
+            mas principalmente <i><b>React</b></i>.
+          </p>
+        </div>
+        </div>
       </div>
     </div>
   );

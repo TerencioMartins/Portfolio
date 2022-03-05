@@ -4,12 +4,53 @@
     align-items: center;
     justify-content: center;
 } */
-.body-sobreMim {
-  transition: 1s opacity;
-  opacity: 0;
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translatex(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
 }
 .fade-in {
-  opacity: 2;
+  animation-name: fadein;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+@keyframes faderight {
+  from {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translatex(0);
+  }
+}
+.faderight {
+  animation-name: faderight;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0s;
+}
+@keyframes fadeoutright {
+  from {
+    opacity: 1;
+    transform: translatex(0);
+  }
+  to {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+}
+.fadeoutright {
+  animation-name: fadeoutright;
+  animation-fill-mode: both;
+  animation-duration: 1s;
+  animation-delay: 0s;
 }
 .titulo {
   padding-top: 20rem;
@@ -24,13 +65,13 @@
   transition: color 0.4s;
 }
 .letras:hover,
-.descricao:hover {
+.desenvolvedor:hover {
   color: aqua;
   -webkit-transition-delay: 0.01s;
   transition-delay: 0.01s;
   cursor: default;
 }
-.letras:hover{
+.letras:hover {
   transform: scale(1.05);
 }
 .espaco {
@@ -41,17 +82,85 @@
   display: inline-block;
   letter-spacing: 4px;
   font-family: "Ubuntu", sans-serif;
-  padding-left: 15.5rem;
+  /* padding-left: 15.5rem; */
   color: rgb(195, 195, 195);
   font-size: 1.2em;
 }
 .descricao-div {
   display: block;
+  padding-left: 15.5em;
+  z-index: 1;
 }
-
 .song-button {
   padding-left: 15em;
 }
+
+.quem_sou_eu {
+  display: inline-block;
+  color: white;
+  transition: 1s opacity;
+  opacity: 0;
+}
+.desenvolvedor{
+  margin-bottom: 0;
+}
+.sabermais{
+  display: inline-block;
+  margin-top: 0.5em;
+  margin-left: 5em;
+  font-weight: 600;
+  font-size: 1em;
+  color: rgb(255, 0, 76)
+}
+.sabermais:hover{
+  color: aqua;
+  cursor: pointer;
+}
+.sobremimcard1{
+  opacity: 0;
+  position: absolute;
+  top: 17em;
+  right: 12em;
+  width: 33em;
+  height: 33em;
+  background-color: rgba(204, 204, 204, 0.335);
+  border-radius: 43% 57% 24% 76% / 45% 53% 47% 55% ;
+}
+.sobremimcard2{
+  opacity: 0;
+  position: absolute;
+  /* top: 17em;
+  right: 12em; */
+  color: white;
+  width: 40em;
+  height: 40em;
+  font-size: 1.2em;
+  transition: color 0.3s;
+  border-radius: 33% 10% 7% 84% / 9% 10% 65% 70% ;
+  backdrop-filter: blur(30px) saturate(200%);
+  -webkit-backdrop-filter: blur(25px) saturate(200%);
+  background-color: rgba(36, 36, 36, 0.123);
+}
+.sobreMimTexto{
+  display: inline-block;
+  text-align:justify;
+  position: relative;
+  left:9%;
+  top: 6%;
+  color: white;
+  font-size: 1.1em;
+  transition: color 0.3s;
+  width: 20em;
+  height: 20em;
+  text-justify:distribute;
+}
+.sobreMimTexto:hover{
+  color: rgb(10, 10, 10);
+  -webkit-transition-delay: 0.01s;
+  transition-delay: 0.01s;
+  cursor: default;
+}
+
 
 @media only screen and (max-width: 912px) {
   body {

@@ -51,7 +51,8 @@ export default function OutrosProjetos() {
         </span>
         <section className="descricao-div-projetos">
           <div className="descricao-projetos">
-            <Typewriter
+            <p>Projetos que desenvolvi em JavaScript <br/> e em React</p>
+            {/* <Typewriter
           onInit={(typewriter) => {
             typewriter
             .typeString("Projetos ")
@@ -68,7 +69,7 @@ export default function OutrosProjetos() {
           options={{
             delay:30,
           }}
-          />
+          /> */}
           </div>
         </section>
       </div>

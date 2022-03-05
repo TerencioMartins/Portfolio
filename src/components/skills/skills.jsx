@@ -40,7 +40,8 @@ export default function Skills() {
           <br></br>
           <section className="descricao-div-skills">
             <div className="descricao-skills">
-              <Typewriter
+              <p>Habilidades que aprendi durante a vida <br/> e na jornada como programador.</p>
+              {/* <Typewriter
                 onInit={(typewriter) => {
                   typewriter
                     .typeString("Habilidades ")
@@ -65,7 +66,7 @@ export default function Skills() {
                 options={{
                   delay: 30,
                 }}
-              />
+              /> */}
             </div>
           </section>
         </div>
