@@ -31,78 +31,78 @@ export default function Header() {
 
   return (
     <>
-    <div className="headerBody">
-      <menu className="vertical-menu">
-        <div className="top-header">
-          <img className="logoIcon" src={logoIcon} alt="logoicon" />
-          <p>
-            <b>Terencio</b>
-          </p>
-          <p id="martins">Martins</p>
-          <span id="desenvolvedor-web">Desenvolvedor Web</span>
-        </div>
-        <nav className={style}>
-          <a href={Curriculo} target="_blank" className="curriculo">
-            {" "}
-            Curriculo 🤍{" "}
-          </a>
-
-          <div className="secoes">
-            <Link to="/" id="first-nav">
-              Quem sou eu?
-            </Link>
-            <Link to="/projetos">Outros Projetos</Link>
-            <Link to="/skills">Skills</Link>
+      <div className="headerBody">
+        <menu className="vertical-menu">
+          <div className="top-header">
+            <img className="logoIcon" src={logoIcon} alt="logoicon" />
+            <p>
+              <b>Terencio</b>
+            </p>
+            <p id="martins">Martins</p>
+            <span id="desenvolvedor-web">Desenvolvedor Web</span>
           </div>
-          <ul className="footer">
-            <li id="linkedin">
-              <span>
-                <a
-                  href="https://www.linkedin.com/in/terencio-martins/"
-                  target="_blank"
-                  id="contact"
-                >
-                  <FaLinkedinIn size={25} />
-                </a>
-              </span>
-            </li>
-            <li id="github">
-              <span>
-                <a
-                  href="https://github.com/TerencioMartins"
-                  target="_blank"
-                  id="contact"
-                >
-                  <FaGithub size={25} />
-                </a>
-              </span>
-            </li>
-            <li id="gmail">
-              <span>
-                <a
-                  href="mailto:zerofirty0@gmail.com"
-                  target="_blank"
-                  id="contact"
-                >
-                  <SiGmail size={25} />
-                </a>
-              </span>
-            </li>
-          </ul>
-        </nav>
-        <div onClick={changeStyle} className="mobile-menu">
-          <AiOutlineMenu size={50} />
+          <nav className={style}>
+            <a href={Curriculo} target="_blank" className="curriculo">
+              {" "}
+              Curriculo 🤍{" "}
+            </a>
+
+            <div className="secoes">
+              <Link to="/" id="first-nav">
+                Quem sou eu?
+              </Link>
+              <Link to="/projetos">Outros Projetos</Link>
+              <Link to="/skills">Skills</Link>
+            </div>
+            <ul className="footer">
+              <li id="linkedin">
+                <span>
+                  <a
+                    href="https://www.linkedin.com/in/terencio-martins/"
+                    target="_blank"
+                    id="contact"
+                  >
+                    <FaLinkedinIn size={25} />
+                  </a>
+                </span>
+              </li>
+              <li id="github">
+                <span>
+                  <a
+                    href="https://github.com/TerencioMartins"
+                    target="_blank"
+                    id="contact"
+                  >
+                    <FaGithub size={25} />
+                  </a>
+                </span>
+              </li>
+              <li id="gmail">
+                <span>
+                  <a
+                    href="mailto:zerofirty0@gmail.com"
+                    target="_blank"
+                    id="contact"
+                  >
+                    <SiGmail size={25} />
+                  </a>
+                </span>
+              </li>
+            </ul>
+          </nav>
+          <div onClick={changeStyle} className="mobile-menu">
+            <AiOutlineMenu size={50} />
+          </div>
+        </menu>
+        <audio id="player" loop ref={audioRef}>
+          <source src={lofi} type="audio/mp3" />
+        </audio>
+        <div className="players">
+          <p onClick={play} className="play">
+            <BsMusicNoteBeamed size={40} className="play" />
+          </p>
         </div>
-      </menu>
-      <audio id="player" loop ref={audioRef}>
-        <source src={lofi} type="audio/mp3" />
-      </audio>
-      <div className="players">
-        <p onClick={play} className="play">
-          <BsMusicNoteBeamed size={40} className="play" />
-        </p>
       </div>
-    </div>
     </>
   );
 }

@@ -103,7 +103,6 @@
 }
 
 .barras:hover {
-  /* transform: scale(1.01); */
   box-shadow: 0px 0px 30px 1px rgb(243, 243, 243, 0.7);
 }
 
@@ -124,7 +123,6 @@
 }
 @media screen and (max-width:1024px) {
   #textZone-skills{
-    /* padding: 0; */
     padding-left: 15em;
     padding-top: 5em;
   }

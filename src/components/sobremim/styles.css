@@ -1,9 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Ubuntu:wght@500&display=swap");
-/* .sobreMim{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
 @keyframes fadein {
   from {
     opacity: 0;
@@ -82,7 +77,6 @@
   display: inline-block;
   letter-spacing: 4px;
   font-family: "Ubuntu", sans-serif;
-  /* padding-left: 15.5rem; */
   color: rgb(195, 195, 195);
   font-size: 1.2em;
 }
@@ -202,10 +196,6 @@
   }
   .sobreMim {
     position: absolute;
-    /* display: flex; */
-    /* flex-direction: column;
-    align-items: center;
-    justify-content: center; */
     width: 100%;
     top: 15em;
   }
