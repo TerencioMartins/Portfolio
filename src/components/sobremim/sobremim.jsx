@@ -79,21 +79,21 @@ export default function SobreMim({ url }) {
             </p>  
           </div>
         </section>
-        <div className={`sobremimcard1 ${faderight}`}>
-        <div className={`sobremimcard2 ${faderight}`}>
+        {/* <div className={`sobremimcard1 ${faderight}`}>
+        <div className={`sobremimcard2 ${faderight}`}> */}
           <p className={`sobreMimTexto ${faderight}`}>
-            <i>&emsp;&emsp;&emsp;&emsp;&emsp;Apaixonado por:</i> <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🎮 𝙂𝙖𝙢𝙚𝙨 <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🎌 𝘼𝙣𝙞𝙢𝙚𝙨 <br />
-            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;💻 𝘾𝙤𝙙𝙞𝙣𝙜 <br />
+            <i>Apaixonado por:</i> <br />
+           🎮 𝙂𝙖𝙢𝙚𝙨 <br />
+            🎌 𝘼𝙣𝙞𝙢𝙚𝙨 <br />
+            💻 𝘾𝙤𝙙𝙞𝙣𝙜 <br />
             <br/>
             Escolhi desenvolvimento pois além de incrível, é muito animador
             pensar na possibilidade de impactar inúmeras vidas com o que faço.
             Atualmente crio meus próprios projetos utilizando várias ferramentas
             mas principalmente <i><b>React</b></i>.
           </p>
-        </div>
-        </div>
+        {/* </div>
+        </div> */}
       </div>
     </div>
   );
