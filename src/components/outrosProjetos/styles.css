@@ -50,7 +50,11 @@
   transition: all 0.3s;
   filter: grayscale(1);
 }
-
+.teste{
+  object-fit: contain;
+  width: 254px;
+  height: 254px;
+}
 .card:hover {
   transform: scale(1.05);
   box-shadow: 0px 0px 30px 1px rgba(238, 238, 238, 0.7);

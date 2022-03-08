@@ -3,10 +3,11 @@ import "./styles.css";
 import projeto1 from "../../assets/projeto1.png";
 import projeto2 from "../../assets/projeto2.png";
 import projeto3 from "../../assets/projeto3.png";
+import projeto4 from "../../assets/projeto4.png";
 import { useContext } from "react";
 import Context from "../../context/context";
 import { useEffect } from "react";
-import Typewriter from 'typewriter-effect'
+import Typewriter from "typewriter-effect";
 
 export default function OutrosProjetos() {
   const { mouseOver, setMouseOver, changeMouseOver } = useContext(Context);
@@ -51,7 +52,9 @@ export default function OutrosProjetos() {
         </span>
         <section className="descricao-div-projetos">
           <div className="descricao-projetos">
-            <p>Projetos que desenvolvi em JavaScript <br/> e em React</p>
+            <p>
+              Projetos que desenvolvi em JavaScript <br /> e em React
+            </p>
             {/* <Typewriter
           onInit={(typewriter) => {
             typewriter
@@ -93,6 +96,11 @@ export default function OutrosProjetos() {
             target="_blank"
           >
             <img src={projeto3} />
+          </a>
+        </div>
+        <div className="card">
+          <a href="https://terencioflix.netlify.app/" target="_blank">
+            <img className="teste" src={projeto4} />
           </a>
         </div>
       </div>
