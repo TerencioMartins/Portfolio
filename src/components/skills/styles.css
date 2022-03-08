@@ -122,8 +122,20 @@
     padding-right: 0em;
   }
 }
-
-@media only screen and (max-width: 912px) {
+@media screen and (max-width:1024px) {
+  #textZone-skills{
+    /* padding: 0; */
+    padding-left: 15em;
+    padding-top: 5em;
+  }
+  .barras-skills{
+    padding: 0;
+    position: absolute;
+    top: 20em;
+    left: 22em;
+  }
+}
+@media only screen and (max-width: 712px) {
   body {
     overflow: hidden;
   }
@@ -141,7 +153,7 @@
   }
   .barras-skills {
     position: absolute;
-    top: 4em;
+    top: 20em;
     display: inline-block;
     width: 100%;
     right: 0em;
