@@ -123,6 +123,7 @@
   height: 20em;
   text-justify:distribute;
   font-family: "Ubuntu", sans-serif;
+  opacity: 0;
 }
 .sobreMimTexto:hover{
   color: aqua;
