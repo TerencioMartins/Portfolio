@@ -22,11 +22,11 @@
   margin: 0;
   float: right;
   padding-right: 15em;
-  padding-top: 15em;
+  padding-top: 7em;
   display: flex;
   flex-wrap: wrap;
   max-width: 508px;
-
+  flex-direction: row;
 }
 
 #textZone-projetos {
@@ -69,7 +69,7 @@
   }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1478px) {
   #textZone-projetos {
     padding-left: 15em;
     padding-top: 3em;

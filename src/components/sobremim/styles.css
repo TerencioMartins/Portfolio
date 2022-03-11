@@ -131,7 +131,7 @@
   transition-delay: 0.01s;
   cursor: default;
 }
-@media screen and (max-width:1700px){
+@media screen and (max-width:1643px){
   .titulo{
     padding-top: 0;
   }
@@ -164,9 +164,15 @@
   .sobreMimTexto{
     transform: scale(0.5);
     left:0;
-  }
-  .sobreMimTexto{
     padding-bottom: 1em ;
+    position: absolute;
+    text-align: center;
+    width: 600px;
+    height: 600px;
+    top: 16em;
+    left:0;
+    width: 350px;
+    font-size: 0.9em;
   }
   .sobreMim {
     position: absolute;
@@ -223,15 +229,5 @@
     100% {
       left: 0;
     }
-  }
-  .sobreMimTexto{
-    position: absolute;
-    text-align: center;
-    width: 600px;
-    height: 600px;
-    top: 16em;
-    left: 1em;
-    width: 350px;
-    font-size: 0.9em;
   }
 }

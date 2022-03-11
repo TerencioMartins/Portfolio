@@ -4,6 +4,7 @@ import projeto1 from "../../assets/projeto1.png";
 import projeto2 from "../../assets/projeto2.png";
 import projeto3 from "../../assets/projeto3.png";
 import projeto4 from "../../assets/projeto4.png";
+import projeto5 from "../../assets/projeto5.png";
 import { useContext } from "react";
 import Context from "../../context/context";
 import { useEffect } from "react";
@@ -101,6 +102,11 @@ export default function OutrosProjetos() {
         <div className="card">
           <a href="https://terencioflix.netlify.app/" target="_blank">
             <img className="teste" src={projeto4} />
+          </a>
+        </div>
+        <div className="card">
+          <a href="https://terenciofy.netlify.app/" target="_blank">
+            <img className="teste" src={projeto5} />
           </a>
         </div>
       </div>
