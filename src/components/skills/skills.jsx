@@ -109,7 +109,7 @@ export default function Skills() {
               <span>Multitarefas</span>
             </div>
             <div className="barras" id="empatia">
-              <span>Resolução de problemas</span>
+              <span>Resiliência</span>
             </div>
             <div className="barras" id="colaboracao">
               <span>Colaboração</span>
