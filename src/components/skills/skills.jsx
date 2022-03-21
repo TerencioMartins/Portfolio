@@ -82,6 +82,7 @@ export default function Skills() {
             <div className="barras" id=""></div>
             <div className="barras" id=""></div>
             <div className="barras" id=""></div>
+            <div className="barras" id=""></div>
           </div>
           <div className="barras-status">
             <div className="barras" id="frontEnd">
@@ -101,6 +102,9 @@ export default function Skills() {
             </div>
             <div className="barras" id="bootstrap">
               <span>Bootstrap/MUI</span>
+            </div>
+            <div className="barras" id="ingles">
+              <span>Inglês</span>
             </div>
             <div className="barras" id="proAtividade">
               <span>Pró-Atividade</span>
